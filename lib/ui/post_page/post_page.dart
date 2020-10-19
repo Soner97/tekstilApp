@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tekstilcim/core/components/colors.dart';
-import 'package:tekstilcim/core/context_extension.dart';
+import 'package:tekstilcim/core/components/context_extension.dart';
 import 'package:tekstilcim/ui/post_page/product_ad.dart';
 import 'package:tekstilcim/ui/post_page/service_ad.dart';
 import 'package:toggle_switch/toggle_switch.dart';
@@ -38,7 +38,7 @@ class _PostPageViewState extends State<PostPageView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,

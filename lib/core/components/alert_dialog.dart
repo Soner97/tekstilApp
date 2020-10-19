@@ -1,21 +1,18 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 import 'package:tekstilcim/core/components/colors.dart';
 import 'package:tekstilcim/core/components/radiobutton.dart';
 import 'package:tekstilcim/core/components/text.dart';
-import 'package:tekstilcim/core/context_extension.dart';
+import 'package:tekstilcim/core/components/context_extension.dart';
 
 //Text('${nameRadio[index]}',
 // Navigator.of(context).pop();
 // ignore: must_be_immutable
 class AlertDialogWidget extends StatelessWidget {
-  final String buttonName;
+  final List<String> selectedValue;
   final List<String> radioButtonName;
 
-  const AlertDialogWidget(
-      {Key key, @required this.buttonName, this.radioButtonName});
+  const AlertDialogWidget({Key key, this.radioButtonName, this.selectedValue});
 
   @override
   Widget build(BuildContext context) {
@@ -47,11 +44,13 @@ class AlertDialogWidget extends StatelessWidget {
                         padding: EdgeInsets.all(20),
                         color: Colors.white,
                         child: RadioButtonWidget(
-                            radioButtonName: this.radioButtonName)),
+                          radioButtonName: this.radioButtonName,
+                          selectedValue: selectedValue,
+                        )),
                   );
                 });
           },
-          child: LabelText("$buttonName")),
+          child: LabelText("$selectedValue")),
     );
   }
 }

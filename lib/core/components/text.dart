@@ -15,3 +15,18 @@ class LabelText extends StatelessWidget {
     );
   }
 }
+
+class LabelTextDetail extends StatelessWidget {
+  final String name;
+
+  const LabelTextDetail(this.name);
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      "$name",
+      style: GoogleFonts.montserrat(
+          color: Colors.black, fontSize: 17.0, fontWeight: FontWeight.w400),
+    );
+  }
+}
