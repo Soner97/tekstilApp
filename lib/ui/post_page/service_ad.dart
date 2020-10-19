@@ -3,6 +3,7 @@ import 'package:tekstilcim/core/components/colors.dart';
 import 'package:tekstilcim/core/components/dropdown_button.dart';
 import 'package:tekstilcim/core/components/text.dart';
 import 'package:tekstilcim/core/components/context_extension.dart';
+import 'package:tekstilcim/core/components/textfield.dart';
 
 class ServiceAD extends StatefulWidget {
   @override
@@ -232,12 +233,42 @@ class _ServiceADState extends State<ServiceAD> {
           width: context.dynamicWidth(0.1),
           padding: context.paddingHigh,
           child: Row(
+            children: [Expanded(child: LabelText('İlana Başlık Ekleyin:'))],
+          ),
+        ),
+        Container(
+          child: TextFieldWidget(
+            hint: 'Beylikdüzü"de Overlokçu aranıyor. Ücret dolgun.',
+          ),
+        ),
+        Container(
+          height: context.dynamicHeight(0.1),
+          width: context.dynamicWidth(0.1),
+          padding: context.paddingHigh,
+          child: Row(
             children: [
               Expanded(
                   child: FittedBox(
-                child: LabelText(
-                    'İlana açıklama ekleyin, basitçe işinizden bahsedin.'),
+                child:
+                    LabelText('İlana açıklama ekleyin, kısaca işten bahsedin.'),
               ))
+            ],
+          ),
+        ),
+        Container(
+          child: TextFieldWidget(
+            hint:
+                'Maaş haftalıktır, yol, yemek ücretsizdir. Ciddi düşünenler arasın.',
+          ),
+        ),
+        Container(
+          height: context.dynamicHeight(0.1),
+          width: context.dynamicWidth(0.1),
+          padding: context.paddingHigh,
+          child: Row(
+            children: [
+              Expanded(
+                  child: LabelText('Son olarak ilana bir fotoğraf ekleyin.'))
             ],
           ),
         ),
