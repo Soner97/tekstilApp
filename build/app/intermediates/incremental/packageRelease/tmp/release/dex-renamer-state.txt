@@ -1,0 +1,4 @@
+#Tue Oct 20 15:18:11 EET 2020
+base.0=C\:\\Users\\Soner\\Desktop\\Flutter Projects\\tekstilcim\\tekstilcim\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

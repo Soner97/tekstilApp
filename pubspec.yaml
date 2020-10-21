@@ -26,7 +26,6 @@ dependencies:
   cupertino_icons: ^1.0.0
   curved_navigation_bar: ^0.3.4
   google_fonts: ^1.1.1
-  grouped_buttons: ^1.0.4
   toggle_switch: ^0.1.8
 
 dev_dependencies:
